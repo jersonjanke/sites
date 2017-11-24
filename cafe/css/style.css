@@ -1,3 +1,6 @@
+/* Breakpoints */
+
+
 /* Reset */
 * {
     box-sizing: border-box;
@@ -45,6 +48,13 @@ a.menu-logo {
     display: inline-block;
 }
 
+@media (max-width: 739px) {
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+}
+
 .menu-nav a {
     display: block;
     padding: 10px;
@@ -80,6 +90,12 @@ a.menu-logo {
 .intro p {
     font-style: italic;
     font-size: 1.125em;
+}
+
+@media(max-width: 739px) {
+    .intro {
+        padding: 60px 0;
+    }
 }
 
 /* Sobre */
@@ -138,6 +154,25 @@ a.menu-logo {
     max-width: 460px;
 }
 
+@media(min-width: 740px) and (max-width: 980px) {
+    .sobre-container {
+        max-width: 720px;
+    }
+    .sobre-item {
+        width: 340px;
+    }
+}
+
+@media(max-width: 739px) {
+    .sobre-container {
+        max-width: 300px;
+    }
+
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
 /* Produtos */
 .produtos {
     background: #e7e4d8;
@@ -210,6 +245,24 @@ h2.produtos-mineira::before {
     text-align: center;
     padding: 15px 0;
     margin: 20px auto 0 auto;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .produtos-container {
+        max-width: 720px;
+    }
+    .produtos-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 739px) {
+    .produtos-container {
+        max-width: 300px;
+    }
+    .produtos-item {
+        margin: 10px auto 0 auto;
+    }
 }
 
 /* Locais */
